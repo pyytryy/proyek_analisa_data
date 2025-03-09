@@ -16,7 +16,7 @@ with st.sidebar:
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("dataset_df.csv") 
+    df = pd.read_csv("dashboard/gabungan_df.csv")
     return df
 
 df = load_data()

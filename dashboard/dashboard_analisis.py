@@ -87,7 +87,7 @@ st.pyplot(fig)
 #Analisis Lanjutan
 import gdown
 
-data = pd.read_csv("dataset_df.csv")
+data = pd.read_csv("dashboard/dataset_df.csv")
 
 data_clustering = data.copy()
 

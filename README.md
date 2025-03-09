@@ -5,7 +5,8 @@ mkdir proyek_analisa_data
 cd proyek_analisa_data
 pipenv install
 pipenv shell
-pip install -r requirements.txt
+C:/Users/ASUS/.virtualenvs/proyek_analisis_data-q15gi-S1/Scripts/pip freeze > requirements.txt
+
 ```
 
 ## Run steamlit app

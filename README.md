@@ -19,7 +19,5 @@ pipenv install
 
 pipenv shell
 
-pip install -r requirements.txt
-
 ## 3 Run steamlit app
 streamlit run dashboard_analisis.py

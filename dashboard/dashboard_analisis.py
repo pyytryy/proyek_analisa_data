@@ -37,7 +37,8 @@ col3.metric("Average CO", round(df_filtered["CO"].mean(), 2))
 col4.metric("Average O3", round (df_filtered ["O3"].mean(),2))
 
 #Pertanyaan 1
-#Dari 13 Stasiun di Beijing, stasiun manakah yang memiliki kadar PM2.5 tertinggi dari tahun 2015-2017
+#Di antara 5 stasiun di Beijing, stasiun mana yang mencatat kadar PM2.5 tertinggi dalam rentang tahun 2015–2017?
+#Bagaimana pola fluktuasi kadar PM2.5 di setiap stasiun selama periode tersebut?
 st.subheader(f"**Average PM2.5 for year {selected_year} on Station in Beijing ({selected_station} Station)**")
 avg_pm25_per_station = df_filtered.groupby("station")["PM2.5"].mean().reset_index()
 
@@ -51,7 +52,8 @@ plt.ylabel("Rata-rata PM2.5 (µg/m³)")
 st.pyplot(fig)
 
 #Pertanyaan 2
-#Apakah suhu berkorelasi dengan CO, dan bagaimana suhu berkorelasi dengan O3?
+#Bagaimana hubungan antara suhu dengan kadar CO di udara? Apakah terdapat tren yang menunjukkan pola perubahan CO seiring dengan variasi suhu?
+#Bagaimana dengan hubungan antara suhu dan kadar O3?
 st.subheader(f"**Corelation Temperature with CO and O3 for year {selected_year} on {selected_station} Station**")
 
 kolom_korelasi = ["CO", "O3", "TEMP"]
@@ -63,7 +65,8 @@ plt.title("Heatmap Corelation Air Polution and Temperature ")
 st.pyplot(fig)
 
 #Pertanyaan 3
-#Apakah polusi udara PM2.5, PM10 dan O3 meningkat dari tahun ke tahun?
+#Bagaimana pola perubahan kadar polutan udara (PM2.5, PM10, dan O3) dari tahun ke tahun? Apakah terdapat tren peningkatan atau penurunan yang signifikan,
+#dan faktor apa yang mungkin berkontribusi terhadap perubahan tersebut?
 st.subheader(f"**Air Polution from {selected_year} on {selected_station} Station**")
 polusi_per_tahun = df_filtered.groupby("year")[["PM2.5","PM10","O3"]].mean()
 

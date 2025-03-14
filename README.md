@@ -6,7 +6,7 @@ Proyek ini adalah dashboard analisis data menggunakan **Streamlit**.
 ## **1️ Setup Environment - Command Prompt / Terminal**  
 Gunakan **pipenv** untuk mengelola virtual environment.  
 
-### **🔹 Install & Aktifkan Virtual Environment**
+### ** Install & Aktifkan Virtual Environment**
 ```bash
 mkdir dashboard
 cd dashboard

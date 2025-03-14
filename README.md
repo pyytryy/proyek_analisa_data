@@ -20,4 +20,4 @@ pipenv install
 pipenv shell
 
 ## 3 Run steamlit app
-streamlit run dashboard_analisis.py
+streamlit run dashboard/dashboard_analisis.py
